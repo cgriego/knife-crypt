@@ -22,27 +22,27 @@ This plugin is distributed as a Ruby Gem. To install it, run:
 
 Encrypt a string
 
-    $ knife encrypt foo
+    $ knife encrypt '"foo"'
 
 Encrypt an array
 
-    $ knife encrypt foo
+    $ knife encrypt '["foo", "bar"]'
 
 Encrypt a hash
 
-    $ knife encrypt foo
+    $ knife encrypt '{"foo"=>{"bar"=>"baz"}}'
 
 Decrypt to a string
 
-    $ knife decrypt foo
+    $ knife decrypt e4ibEHAinGltDjYNQPV4rw==
 
 Decrypt to an array
 
-    $ knife decrypt foo
+    $ knife decrypt 7wrizj9MAjmSVWWq69DUql0hNHFv7Hp/1tnQ/NJuD08=
 
 Decrypt to a hash
 
-    $ knife decrypt foo
+    $ knife decrypt nsXFeAANrmnBNu+QPfOHZFB5szSRA+Ezu94fmrJnNhk=
 
 ## Contributing
 
