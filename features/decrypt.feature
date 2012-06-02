@@ -3,6 +3,13 @@ Feature: knife decrypt
   As a knife user
   I want to decrypt encrypted values
 
+Scenario: Command List
+  When I run `knife`
+  Then the output should contain:
+    """
+    knife decrypt DATA (options)
+    """
+
 Scenario: Decrypting a String
   Given a knife configuration with en encrypted data bag secret "my secret"
   When I successfully run `knife decrypt e4ibEHAinGltDjYNQPV4rw==`

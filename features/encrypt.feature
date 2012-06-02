@@ -3,6 +3,13 @@ Feature: knife encrypt
   As a knife user
   I want to encrypt values
 
+Scenario: Command List
+  When I run `knife`
+  Then the output should contain:
+    """
+    knife encrypt DATA (options)
+    """
+
 Scenario: Encrypting a String
   Given a knife configuration with en encrypted data bag secret "my secret"
   When I successfully run `knife encrypt '"foo"'`

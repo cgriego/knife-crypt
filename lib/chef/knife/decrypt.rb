@@ -3,6 +3,8 @@ require "chef/knife"
 class Chef
   class Knife
     class Decrypt < Knife
+      banner "knife decrypt DATA (options)"
+
       def run
         encrypted_value = @name_args[0]
         secret = Chef::EncryptedDataBagItem.load_secret
