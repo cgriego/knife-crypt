@@ -10,6 +10,18 @@ Scenario: Command List
     knife decrypt DATA (options)
     """
 
+Scenario: Usage
+  When I run `knife decrypt`
+  Then the output should contain:
+    """
+    USAGE: knife decrypt DATA (options)
+    """
+  And the output should contain:
+    """
+    FATAL: You must specify data to decrypt
+    """
+  And the exit status should not be 0
+
 Scenario: Decrypting a String
   Given a knife configuration with en encrypted data bag secret "my secret"
   When I successfully run `knife decrypt e4ibEHAinGltDjYNQPV4rw==`

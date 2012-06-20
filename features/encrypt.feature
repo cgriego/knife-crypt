@@ -10,6 +10,18 @@ Scenario: Command List
     knife encrypt DATA (options)
     """
 
+Scenario: Usage
+  When I run `knife encrypt`
+  Then the output should contain:
+    """
+    USAGE: knife encrypt DATA (options)
+    """
+  And the output should contain:
+    """
+    FATAL: You must specify data to encrypt
+    """
+  And the exit status should not be 0
+
 Scenario: Encrypting a String
   Given a knife configuration with en encrypted data bag secret "my secret"
   When I successfully run `knife encrypt '"foo"'`
