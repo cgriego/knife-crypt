@@ -2,4 +2,4 @@ source 'https://rubygems.org'
 
 gemspec :development_group => :test, :path => ".."
 
-gem "chef", "= 10.10.0"
+gem "chef", "= 0.10.10"
