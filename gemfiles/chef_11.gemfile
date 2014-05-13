@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gemspec :development_group => :test
+gemspec :development_group => :test, :path => ".."
 
 gem "chef", "= 11.12.4"
