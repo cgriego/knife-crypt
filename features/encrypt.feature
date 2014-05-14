@@ -29,7 +29,7 @@ Scenario: Encrypting a String
     |chef_version|encrypted_string                              |
     |0.10.10     |e4ibEHAinGltDjYNQPV4rw==\n                    |
     |10.32.2     |e4ibEHAinGltDjYNQPV4rw==\n                    |
-    |11.4.0      |9ZgVemCtbgVxJO8gmP7y8oXDUaYAYxQzkI5acgHm4Kw=\n|
+    |11.12.4     |9ZgVemCtbgVxJO8gmP7y8oXDUaYAYxQzkI5acgHm4Kw=\n|
 
 Scenario: Encrypting an Array
   Given a knife configuration with en encrypted data bag secret "my secret"
@@ -38,7 +38,7 @@ Scenario: Encrypting an Array
     |chef_version|encrypted_string                              |
     |0.10.10     |7wrizj9MAjmSVWWq69DUql0hNHFv7Hp/1tnQ/NJuD08=\n|
     |10.32.2     |7wrizj9MAjmSVWWq69DUql0hNHFv7Hp/1tnQ/NJuD08=\n|
-    |11.4.0      |9ZgVemCtbgVxJO8gmP7y8uGwkFOaRPd0s74enPmPLhg=\n|
+    |11.12.4     |9ZgVemCtbgVxJO8gmP7y8uGwkFOaRPd0s74enPmPLhg=\n|
 
 Scenario: Encrypting a Hash
   Given a knife configuration with en encrypted data bag secret "my secret"
@@ -47,4 +47,4 @@ Scenario: Encrypting a Hash
     |chef_version|encrypted_string                              |
     |0.10.10     |nsXFeAANrmnBNu+QPfOHZFB5szSRA+Ezu94fmrJnNhk=\n|
     |10.32.2     |nsXFeAANrmnBNu+QPfOHZFB5szSRA+Ezu94fmrJnNhk=\n|
-    |11.4.0      |9ZgVemCtbgVxJO8gmP7y8qJWD5s+Mz808peVZbMfalYVzNylYukjQTf+h791\nOdSv\n|
+    |11.12.4     |9ZgVemCtbgVxJO8gmP7y8qJWD5s+Mz808peVZbMfalYVzNylYukjQTf+h791\nOdSv\n|
