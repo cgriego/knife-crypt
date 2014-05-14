@@ -1,3 +1,3 @@
 require "bundler/setup"
 require "aruba/cucumber"
-require "debugger"
+require "chef/version"

@@ -14,7 +14,7 @@ class Chef
 
         encrypted_value = @name_args[0]
         secret = Chef::EncryptedDataBagItem.load_secret
-        decrypted_value = if Chef::EncryptedDataBagItem.method_defined?(:decrypt_value)
+        decrypted_value = if Chef::EncryptedDataBagItem.methods.include?(:decrypt_value)
                             Chef::EncryptedDataBagItem.decrypt_value encrypted_value, secret
                           else
                             Chef::EncryptedDataBagItem::Decryptor.for(encrypted_value, secret).for_decrypted_item
