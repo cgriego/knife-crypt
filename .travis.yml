@@ -1,5 +1,10 @@
 language: ruby
 rvm:
+  - 2.1
   - 1.9.3
-  - 1.9.2
 bundler_args: --without development
+gemfile:
+  - gemfiles/chef_10_10.gemfile
+  - gemfiles/chef_10_32.gemfile
+  - gemfiles/chef_11.gemfile
+  - Gemfile
