@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Knife::Crypt::VERSION
 
-  gem.add_runtime_dependency "chef", ">= 0.10.8", "< 12.0.0"
+  gem.add_runtime_dependency "chef", ">= 0.10.8", "< 12.3.0"
 
   gem.add_development_dependency "aruba", "~> 0.4.11"
   gem.add_development_dependency "bundler", "~> 1.0"
