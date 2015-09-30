@@ -18,7 +18,7 @@ class Chef
         encrypted_value = if Chef::EncryptedDataBagItem.methods.include? :encrypt_value
                             Chef::EncryptedDataBagItem.encrypt_value(decrypted_value, secret)
                           else
-                            Chef::EncryptedDataBagItem::Encryptor.new(decrypted_value, secret, initialization_vector).for_encrypted_item["encrypted_data"]
+			    Chef::EncryptedDataBagItem::Encryptor.new(decrypted_value, secret, initialization_vector).for_encrypted_item
                           end
         puts encrypted_value
       end
