@@ -20,5 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "aruba", "~> 0.4.11"
   gem.add_development_dependency "bundler", "~> 1.0"
   gem.add_development_dependency "cucumber", "~> 1.2.0"
-  gem.add_development_dependency "rake", "~> 0.9.0"
+  gem.add_development_dependency "rake", ">= 0.9.0", "< 13.1"
 end
